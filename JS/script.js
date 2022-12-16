@@ -15,3 +15,17 @@ window.onscroll = () => {
 	menu.classList.remove('bx-x');
 	navlist.classList.remove('open');
 };
+
+
+// for active items in navbar: 
+let headerItems = document.getElementById('nav');
+let navItems = document.getElementsByClassName('item');
+
+for (let i = 0; i < navItems.length; i++) {
+	navItems[i].addEventListener('click', function() {
+		let currentItem = document.getElementsByClassName('active');
+		currentItem[0].className = currentItem[0].className.replace(' active', '');
+		this.className += ' active';
+	});
+}
+
