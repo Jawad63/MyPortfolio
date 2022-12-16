@@ -19,6 +19,18 @@
 	--p-font: 1.1rem;
 }
 
+/* Styling the scrollbar */
+::-webkit-scrollbar {
+	background-color: var(--bg-color);
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--main-color);
+	border-radius: 5px;
+}
+
+
 body {
 	background: var(--bg-color);
 	color: var(--text-color);
