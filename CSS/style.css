@@ -30,6 +30,11 @@
 	border-radius: 5px;
 }
 
+/* Cursor styling */
+cursor {
+	
+}
+
 
 body {
 	background: var(--bg-color);
@@ -516,6 +521,14 @@ form textarea {
 		grid-template-columns: 1fr;
 	}
 
+	.about-text {
+		text-align: center;
+	}
+
+	.about-me {
+		text-align: left;
+	}
+
 	.about-img {
 		text-align: center;
 		order: 2;
@@ -524,7 +537,6 @@ form textarea {
 	.about-img img {
 		width: 100%;
 		height: auto;
-		max-width: 100%;
 	}
 
 	.contact {
@@ -546,7 +558,7 @@ form textarea {
 		flex-direction: column;
 		background: var(--bg-color);
 		text-align: left;
-		transition: all .45s ease;
+		transition: all .90s ease-in-out;
 	}
 
 	.navlist a {
